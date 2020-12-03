@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Book from "./components/Book";
-import Slider from "./components/Slider";
+import BookStore from "./components/BookStore";
 import Favourites from "./components/Favourites";
 import { initializeBooks } from "./reducers/booksReducer";
 import { useDispatch } from "react-redux";
@@ -19,7 +19,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Slider />
+            <BookStore />
           </Route>
           <Route path="/details/:id">
             <Book />

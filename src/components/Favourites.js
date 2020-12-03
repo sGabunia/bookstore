@@ -14,14 +14,14 @@ const Favourites = () => {
       <div className="container">
         <h2 className="favourites-empty">You Have No Favourite Book</h2>
         <Link to="/" className="btn-back">
-          Go Back
+          Back To Store
         </Link>
       </div>
     );
   }
   return (
-    <section className="container">
-      <div className="card-wrapper">
+    <div className="container">
+      <section className="card-wrapper">
         {books.map((book) => {
           const {
             title,
@@ -61,8 +61,8 @@ const Favourites = () => {
             </section>
           );
         })}
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

@@ -22,7 +22,7 @@ const Book = () => {
   } = selectedBook.volumeInfo;
   return (
     <div className="container">
-      <div className="more-details-card">
+      <section className="more-details-card">
         <img src={thumbnail} alt={title} />
         <div className="more-details-info">
           <h3 className="book-title">{title}</h3>
@@ -45,9 +45,9 @@ const Book = () => {
             {description}
           </p>
         </div>
-      </div>
+      </section>
       <Link to="/" className="btn-back">
-        Go To Store
+        Back To Store
       </Link>
     </div>
   );

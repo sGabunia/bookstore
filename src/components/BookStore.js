@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { favouriteBook } from "../reducers/booksReducer";
 import { FaRegHeart } from "react-icons/fa";
 
-const Slider = () => {
+const BookStore = () => {
   const dispatch = useDispatch();
   const books = useSelector(({ books }) => books);
 
@@ -12,8 +12,8 @@ const Slider = () => {
     return <div className="loading">Loading...</div>;
   }
   return (
-    <section className="container">
-      <div className="card-wrapper">
+    <div className="container">
+      <section className="card-wrapper">
         {books.map((book) => {
           const {
             title,
@@ -54,9 +54,9 @@ const Slider = () => {
             </section>
           );
         })}
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
-export default Slider;
+export default BookStore;
