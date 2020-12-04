@@ -16,6 +16,7 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Header />
         <Route exact path="/">
           <BookStore />
         </Route>
