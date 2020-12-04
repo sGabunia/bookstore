@@ -15,20 +15,17 @@ function App() {
 
   return (
     <Router>
-      <div className="app">
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <BookStore />
-          </Route>
-          <Route path="/details/:id">
-            <Book />
-          </Route>
-          <Route path="/favourites">
-            <Favourites />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <BookStore />
+        </Route>
+        <Route path="/details/:id">
+          <Book />
+        </Route>
+        <Route path="/favourites">
+          <Favourites />
+        </Route>
+      </Switch>
     </Router>
   );
 }
