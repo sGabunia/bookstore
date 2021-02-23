@@ -1,2 +1,2 @@
-Google book store project;
-https://bookstorew.herokuapp.com/
+Google book store project using Redux;
+Visit https://bookstorew.herokuapp.com/
