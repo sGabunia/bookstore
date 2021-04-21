@@ -29,9 +29,7 @@ const Book = () => {
           <p>
             {" "}
             <strong>Authors: </strong>
-            {authors.map((author, index) => (
-              <span key={index}>{author} </span>
-            ))}
+            {authors && authors.map((author) => author.slice(0, 12))}
           </p>
           <p>
             <strong>Publisher: </strong>

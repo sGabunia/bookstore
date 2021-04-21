@@ -28,13 +28,15 @@ const Favourites = () => {
             authors,
             imageLinks: { thumbnail },
           } = book.volumeInfo;
+
+          console.log(authors);
           return (
             <section key={book.id} className="card">
               <div className="card-info">
                 <h3 className="book-title">{title.substring(0, 20)}</h3>
                 <p className="author">
                   <span>By</span>{" "}
-                  {authors.map((author) => author.substring(0, 12))}
+                  {authors && authors.map((author) => author.slice(0, 12))}
                 </p>
                 <div className="favourite">
                   <button
